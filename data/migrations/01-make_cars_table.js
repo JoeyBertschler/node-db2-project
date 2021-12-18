@@ -9,7 +9,7 @@ exports.up = function (knex) {
     table.string('title', 128).defaultTo('clean');
     table.string('transmission', 128).defaultTo('automatic');
   });
-};
+}; 
 
 exports.down = function (knex) {
   return knex.schema.dropTable('cars');
